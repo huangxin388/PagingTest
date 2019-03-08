@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="home_page_one_title">连接</string>
+    <string name="home_page_two_title">挖币</string>
+    <string name="home_page_three_title">我的</string>
+    <string name="home_twice_back_exit">再按一次返回键退出应用</string>
+</resources>

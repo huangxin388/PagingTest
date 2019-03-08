@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home_activity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+    </android.support.v4.view.ViewPager>
+
+    <View
+        android:id="@+id/home_space_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc"/>
+    
+    <RadioGroup
+        android:id="@+id/rg_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_vpn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_vpn_radiobutton"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@drawable/selector_textcolor_radiobutton"
+            android:text="@string/home_page_one_title"/>
+
+        <RadioButton
+            android:id="@+id/rb_dug"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_dug_radiobutton"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@drawable/selector_textcolor_radiobutton"
+            android:text="@string/home_page_two_title"/>
+
+        <RadioButton
+            android:id="@+id/rb_person"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_person_radiobutton"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@drawable/selector_textcolor_radiobutton"
+            android:text="@string/home_page_three_title"/>
+
+    </RadioGroup>
+
+</LinearLayout>

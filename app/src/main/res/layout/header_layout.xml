@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_refreshing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在刷新..."
+            />
+
+        <TextView
+            android:id="@+id/tv_last_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="距离上次刷新时间"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_pull_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pull_down"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/refresh_layout"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/refresh_layout"
+        android:visibility="gone"
+        android:paddingRight="20dp"/>
+
+</RelativeLayout>
